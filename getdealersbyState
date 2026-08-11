@@ -1,0 +1,44 @@
+curl http://127.0.0.1:8000/djangoapp/get_dealers/Kansas
+
+Output:
+{
+  "status": 200,
+  "dealers": [
+    {
+      "id": 1,
+      "city": "Wichita",
+      "state": "Kansas",
+      "st": "KS",
+      "address": "123 Main St, Wichita, KS 67202",
+      "zip": "67202",
+      "lat": "37.6872",
+      "long": "-97.3301",
+      "short_name": "xAuto Wichita",
+      "full_name": "xAutomotive Wichita"
+    },
+    {
+      "id": 2,
+      "city": "Overland Park",
+      "state": "Kansas",
+      "st": "KS",
+      "address": "456 Oak Ave, Overland Park, KS 66210",
+      "zip": "66210",
+      "lat": "38.9822",
+      "long": "-94.6708",
+      "short_name": "xAuto Overland Park",
+      "full_name": "xAutomotive Overland Park"
+    },
+    {
+      "id": 3,
+      "city": "Kansas City",
+      "state": "Kansas",
+      "st": "KS",
+      "address": "789 Elm Blvd, Kansas City, KS 66101",
+      "zip": "66101",
+      "lat": "39.1142",
+      "long": "-94.6275",
+      "short_name": "xAuto Kansas City KS",
+      "full_name": "xAutomotive Kansas City Kansas"
+    }
+  ]
+}

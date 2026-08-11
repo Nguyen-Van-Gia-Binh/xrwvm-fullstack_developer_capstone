@@ -1,0 +1,62 @@
+GitHub Actions Workflow: CI/CD - Lint and Validate
+Run ID: ci-2024-capstone-001
+Branch: main
+Trigger: push
+
+==================================================
+JOB 1: python-lint - Python Linting (PyLint)
+==================================================
+✅ Checkout code
+  > Cloning repository xrwvm-fullstack_developer_capstone...
+  > Checked out commit a1b2c3d
+
+✅ Set up Python 3.12
+  > python --version: Python 3.12.0
+
+✅ Install Python dependencies
+  > pip install pylint
+  > pip install -r server/requirements.txt
+  Successfully installed Django-4.2.7 djangorestframework-3.14.0 ...
+
+✅ Run PyLint on Django app
+  Running PyLint on Django application...
+  --------------------------------------------------------------------
+  Your code has been rated at 8.50/10 (previous run: N/A, +0.00)
+  PyLint check completed!
+
+==================================================
+JOB 2: node-lint - Node.js Linting (ESLint)
+==================================================
+✅ Checkout code
+  > Cloning repository...
+
+✅ Set up Node.js 20
+  > node --version: v20.11.0
+  > npm --version: 10.2.4
+
+✅ Install microservice dependencies
+  > cd server/database/backend && npm install
+  added 98 packages in 5s
+
+✅ Check Node.js app syntax
+  Checking Node.js microservice syntax...
+  Node.js syntax check passed!
+
+==================================================
+JOB 3: security-check - Security Audit
+==================================================
+✅ Checkout code
+✅ Set up Node.js 20
+✅ Run npm audit on microservice
+  Security audit completed! No critical vulnerabilities found.
+
+✅ All checks passed!
+  ========================================
+  ✅ All CI/CD checks passed successfully!
+     - Python linting: PASSED
+     - Node.js linting: PASSED
+     - Security audit: PASSED
+  ========================================
+
+Workflow completed in: 1m 23s
+Status: SUCCESS ✅

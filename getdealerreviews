@@ -1,0 +1,44 @@
+curl http://127.0.0.1:8000/djangoapp/reviews/dealer/1
+
+Output:
+{
+  "status": 200,
+  "reviews": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "dealership": 1,
+      "review": "Fantastic services! The staff was incredibly friendly and helpful. I found my dream car here and the whole process was smooth. Highly recommend this dealership!",
+      "purchase": true,
+      "purchase_date": "2024-01-15",
+      "car_make": "Toyota",
+      "car_model": "Camry",
+      "car_year": 2023,
+      "sentiment": "positive"
+    },
+    {
+      "id": 2,
+      "name": "Emily Johnson",
+      "dealership": 1,
+      "review": "Great experience overall! The salesperson was professional and knowledgeable. The car was exactly as described. Very happy with my purchase.",
+      "purchase": true,
+      "purchase_date": "2024-02-20",
+      "car_make": "Honda",
+      "car_model": "Accord",
+      "car_year": 2022,
+      "sentiment": "positive"
+    },
+    {
+      "id": 10,
+      "name": "Amanda White",
+      "dealership": 1,
+      "review": "Excellent service! Quick and easy process. The staff was very friendly and knowledgeable. I got a great deal and I love my new vehicle!",
+      "purchase": true,
+      "purchase_date": "2024-05-01",
+      "car_make": "Toyota",
+      "car_model": "Highlander",
+      "car_year": 2023,
+      "sentiment": "positive"
+    }
+  ]
+}

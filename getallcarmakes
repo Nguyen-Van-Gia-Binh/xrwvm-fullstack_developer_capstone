@@ -1,0 +1,50 @@
+curl http://127.0.0.1:8000/djangoapp/get_cars
+
+Output:
+{
+  "CarMakes": [
+    {"id": 1, "name": "Toyota", "description": "Japanese automaker known for reliability", "country_of_origin": "Japan"},
+    {"id": 2, "name": "Honda", "description": "Japanese manufacturer known for efficiency", "country_of_origin": "Japan"},
+    {"id": 3, "name": "Ford", "description": "American automobile manufacturer", "country_of_origin": "USA"},
+    {"id": 4, "name": "Chevrolet", "description": "American automobile manufacturer (GM)", "country_of_origin": "USA"},
+    {"id": 5, "name": "BMW", "description": "German luxury automobile manufacturer", "country_of_origin": "Germany"},
+    {"id": 6, "name": "Mercedes-Benz", "description": "German luxury automobile brand", "country_of_origin": "Germany"},
+    {"id": 7, "name": "Nissan", "description": "Japanese automobile manufacturer", "country_of_origin": "Japan"},
+    {"id": 8, "name": "Tesla", "description": "American electric vehicle manufacturer", "country_of_origin": "USA"}
+  ],
+  "cars": [
+    {"CarMake": "Toyota", "CarModel": "Camry", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Toyota", "CarModel": "Corolla", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Toyota", "CarModel": "RAV4", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Toyota", "CarModel": "Highlander", "Year": 2023, "Type": "SUV"},
+    {"CarMake": "Toyota", "CarModel": "Tacoma", "Year": 2024, "Type": "TRUCK"},
+    {"CarMake": "Honda", "CarModel": "Accord", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Honda", "CarModel": "Civic", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Honda", "CarModel": "CR-V", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Honda", "CarModel": "Pilot", "Year": 2023, "Type": "SUV"},
+    {"CarMake": "Ford", "CarModel": "Mustang", "Year": 2024, "Type": "COUPE"},
+    {"CarMake": "Ford", "CarModel": "Explorer", "Year": 2023, "Type": "SUV"},
+    {"CarMake": "Ford", "CarModel": "F-150", "Year": 2024, "Type": "TRUCK"},
+    {"CarMake": "Ford", "CarModel": "Bronco", "Year": 2023, "Type": "SUV"},
+    {"CarMake": "Chevrolet", "CarModel": "Equinox", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Chevrolet", "CarModel": "Silverado", "Year": 2023, "Type": "TRUCK"},
+    {"CarMake": "Chevrolet", "CarModel": "Malibu", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Chevrolet", "CarModel": "Tahoe", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "BMW", "CarModel": "3 Series", "Year": 2024, "Type": "SEDAN"},
+    {"CarMake": "BMW", "CarModel": "5 Series", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "BMW", "CarModel": "X5", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "BMW", "CarModel": "M4", "Year": 2023, "Type": "COUPE"},
+    {"CarMake": "Mercedes-Benz", "CarModel": "C-Class", "Year": 2024, "Type": "SEDAN"},
+    {"CarMake": "Mercedes-Benz", "CarModel": "E-Class", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Mercedes-Benz", "CarModel": "GLE", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Mercedes-Benz", "CarModel": "A-Class", "Year": 2023, "Type": "HATCHBACK"},
+    {"CarMake": "Nissan", "CarModel": "Altima", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Nissan", "CarModel": "Rogue", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Nissan", "CarModel": "Sentra", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Nissan", "CarModel": "Pathfinder", "Year": 2023, "Type": "SUV"},
+    {"CarMake": "Tesla", "CarModel": "Model 3", "Year": 2024, "Type": "SEDAN"},
+    {"CarMake": "Tesla", "CarModel": "Model Y", "Year": 2024, "Type": "SUV"},
+    {"CarMake": "Tesla", "CarModel": "Model S", "Year": 2023, "Type": "SEDAN"},
+    {"CarMake": "Tesla", "CarModel": "Model X", "Year": 2023, "Type": "SUV"}
+  ]
+}

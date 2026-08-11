@@ -1,0 +1,156 @@
+.dealers-page { min-height: 100vh; background: #1a1a2e; }
+
+.dealers-hero {
+  background: linear-gradient(180deg, #16213e 0%, #1a1a2e 100%);
+  padding: 60px 2rem 50px;
+  text-align: center;
+  position: relative;
+}
+.dealers-hero::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(102,126,234,0.12) 0%, transparent 70%);
+}
+.hero-content { position: relative; max-width: 700px; margin: 0 auto; }
+.hero-content h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: white; margin-bottom: 0.75rem; }
+.hero-content p { color: #a0aec0; font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+.logged-in-badge {
+  display: inline-block;
+  background: rgba(102,234,130,0.1);
+  border: 1px solid rgba(102,234,130,0.3);
+  color: #68d391;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+.logged-in-badge strong { font-weight: 700; }
+
+.dealers-filters {
+  background: rgba(30,42,58,0.8);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 1.25rem 2rem;
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+.filters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.filter-group { display: flex; align-items: center; gap: 0.75rem; }
+.filter-group label { color: #a0aec0; font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
+.state-select {
+  background: #1e2a3a;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+.state-select:focus { border-color: #667eea; box-shadow: 0 0 0 2px rgba(102,126,234,0.2); }
+.state-select option { background: #1e2a3a; }
+.results-count { color: #a0aec0; font-size: 0.875rem; }
+
+.dealers-content { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+.dealers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.dealer-card {
+  background: #1e2a3a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.dealer-card:hover { transform: translateY(-6px); border-color: rgba(102,126,234,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+
+.dealer-card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.dealer-icon { font-size: 2rem; }
+.dealer-badge {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+}
+
+.dealer-card-body { padding: 1.5rem; flex: 1; }
+.dealer-card-body h3 { font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+.dealer-city { color: #667eea; font-size: 0.9rem; font-weight: 500; margin-bottom: 0.35rem; }
+.dealer-address { color: #718096; font-size: 0.85rem; }
+
+.dealer-card-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.view-reviews-btn, .review-dealer-btn {
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.view-reviews-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #a0aec0;
+}
+.view-reviews-btn:hover { background: rgba(255,255,255,0.08); color: white; }
+.review-dealer-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.review-dealer-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.loading-state, .error-state, .empty-state {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #a0aec0;
+}
+.spinner {
+  width: 50px; height: 50px;
+  border: 3px solid rgba(102,126,234,0.2);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.retry-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+}

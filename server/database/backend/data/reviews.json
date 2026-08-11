@@ -1,0 +1,114 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "dealership": 1,
+      "review": "Fantastic services! The staff was incredibly friendly and helpful. I found my dream car here and the whole process was smooth. Highly recommend this dealership!",
+      "purchase": true,
+      "purchase_date": "2024-01-15",
+      "car_make": "Toyota",
+      "car_model": "Camry",
+      "car_year": 2023
+    },
+    {
+      "id": 2,
+      "name": "Emily Johnson",
+      "dealership": 1,
+      "review": "Great experience overall! The salesperson was professional and knowledgeable. The car was exactly as described. Very happy with my purchase.",
+      "purchase": true,
+      "purchase_date": "2024-02-20",
+      "car_make": "Honda",
+      "car_model": "Accord",
+      "car_year": 2022
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "dealership": 2,
+      "review": "Excellent dealership! Very professional team. They went above and beyond to ensure I was satisfied. Will definitely come back for future purchases.",
+      "purchase": true,
+      "purchase_date": "2024-03-10",
+      "car_make": "Ford",
+      "car_model": "Explorer",
+      "car_year": 2023
+    },
+    {
+      "id": 4,
+      "name": "Sarah Davis",
+      "dealership": 2,
+      "review": "Good experience but the wait time was a bit long. However, the staff was friendly and the car I bought is amazing. Overall satisfied with my visit.",
+      "purchase": true,
+      "purchase_date": "2024-01-28",
+      "car_make": "Chevrolet",
+      "car_model": "Equinox",
+      "car_year": 2024
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "dealership": 3,
+      "review": "Wonderful experience at this location! The team was outstanding and made the car buying process very easy. The price was fair and the car is perfect!",
+      "purchase": true,
+      "purchase_date": "2024-04-05",
+      "car_make": "Toyota",
+      "car_model": "RAV4",
+      "car_year": 2024
+    },
+    {
+      "id": 6,
+      "name": "Lisa Martinez",
+      "dealership": 4,
+      "review": "Terrible experience! The salesman was rude and unhelpful. The car had issues that were not disclosed. Very disappointed and would not recommend.",
+      "purchase": false,
+      "purchase_date": "2024-02-14",
+      "car_make": "Honda",
+      "car_model": "CR-V",
+      "car_year": 2022
+    },
+    {
+      "id": 7,
+      "name": "Robert Taylor",
+      "dealership": 5,
+      "review": "Amazing dealership! Best car buying experience I have ever had. The staff was professional, prices were competitive, and the selection was great. Love my new car!",
+      "purchase": true,
+      "purchase_date": "2024-03-22",
+      "car_make": "BMW",
+      "car_model": "3 Series",
+      "car_year": 2023
+    },
+    {
+      "id": 8,
+      "name": "Jennifer Anderson",
+      "dealership": 6,
+      "review": "Outstanding service from start to finish. The sales team was knowledgeable and patient. No pressure tactics. Got a great deal on a wonderful car!",
+      "purchase": true,
+      "purchase_date": "2024-04-18",
+      "car_make": "Mercedes-Benz",
+      "car_model": "C-Class",
+      "car_year": 2024
+    },
+    {
+      "id": 9,
+      "name": "Charles Jackson",
+      "dealership": 7,
+      "review": "Good dealership with helpful staff. The process was straightforward and they worked with my budget. Happy with the purchase overall.",
+      "purchase": true,
+      "purchase_date": "2024-01-08",
+      "car_make": "Nissan",
+      "car_model": "Altima",
+      "car_year": 2023
+    },
+    {
+      "id": 10,
+      "name": "Amanda White",
+      "dealership": 1,
+      "review": "Excellent service! Quick and easy process. The staff was very friendly and knowledgeable. I got a great deal and I love my new vehicle!",
+      "purchase": true,
+      "purchase_date": "2024-05-01",
+      "car_make": "Toyota",
+      "car_model": "Highlander",
+      "car_year": 2023
+    }
+  ]
+}

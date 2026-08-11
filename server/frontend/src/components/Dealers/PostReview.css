@@ -1,0 +1,51 @@
+.post-review-page { min-height: 100vh; background: #1a1a2e; padding: 2rem; }
+.post-review-container { max-width: 650px; margin: 0 auto; }
+
+.post-review-header { margin-bottom: 2rem; }
+.back-link { color: #a0aec0; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 1rem; transition: color 0.3s; }
+.back-link:hover { color: white; }
+.post-review-header h1 { font-size: 2rem; font-weight: 800; color: white; margin-bottom: 0.5rem; }
+.dealer-name-label { color: #a0aec0; font-size: 0.95rem; }
+.dealer-name-label strong { color: #667eea; }
+
+.post-review-form {
+  background: #1e2a3a; border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px; padding: 2rem;
+  display: flex; flex-direction: column; gap: 1.25rem;
+}
+
+.form-field { display: flex; flex-direction: column; gap: 0.5rem; }
+.form-field label { font-size: 0.875rem; font-weight: 600; color: #a0aec0; }
+.form-field input, .form-field textarea, .form-field select {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; color: white; padding: 0.875rem 1rem;
+  font-size: 0.95rem; font-family: inherit; transition: all 0.3s; outline: none;
+}
+.form-field input:focus, .form-field textarea:focus {
+  border-color: #667eea; background: rgba(102,126,234,0.08);
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+.form-field input::placeholder, .form-field textarea::placeholder { color: #4a5568; }
+.form-field textarea { resize: vertical; }
+
+.form-check { flex-direction: row !important; align-items: center; gap: 0.75rem; }
+.form-check input[type="checkbox"] { width: 18px; height: 18px; accent-color: #667eea; cursor: pointer; }
+.form-check label { font-size: 0.95rem !important; color: white !important; cursor: pointer; }
+
+.submit-review-btn {
+  padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white; border: none; border-radius: 12px;
+  font-size: 1rem; font-weight: 700; cursor: pointer;
+  transition: all 0.3s; font-family: inherit; margin-top: 0.5rem;
+}
+.submit-review-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(102,126,234,0.4); }
+.submit-review-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.review-success {
+  min-height: 60vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 2rem;
+}
+.success-icon { font-size: 4rem; margin-bottom: 1rem; animation: bounce 1s ease-in-out infinite; }
+@keyframes bounce { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+.review-success h2 { font-size: 2rem; color: #68d391; margin-bottom: 0.75rem; }
+.review-success p { color: #a0aec0; }

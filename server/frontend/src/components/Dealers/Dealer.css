@@ -1,0 +1,95 @@
+.dealer-page { min-height: 100vh; background: #1a1a2e; }
+
+.dealer-loading, .dealer-error {
+  min-height: 60vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; color: #a0aec0; gap: 1rem;
+}
+.spinner { width: 50px; height: 50px; border: 3px solid rgba(102,126,234,0.2); border-top-color: #667eea; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.dealer-hero {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  padding: 40px 2rem 50px;
+  position: relative;
+}
+.dealer-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(102,126,234,0.15) 0%, transparent 60%);
+}
+.dealer-hero-content { max-width: 1000px; margin: 0 auto; position: relative; }
+
+.back-link {
+  display: inline-block; color: #a0aec0; text-decoration: none;
+  font-size: 0.9rem; margin-bottom: 1.5rem; transition: color 0.3s;
+}
+.back-link:hover { color: white; }
+
+.dealer-hero-info { display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 2rem; }
+.dealer-hero-icon { font-size: 3rem; flex-shrink: 0; }
+.dealer-hero-info h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: white; margin-bottom: 0.4rem; }
+.dealer-location { color: #667eea; font-weight: 500; margin-bottom: 0.25rem; }
+.dealer-address { color: #a0aec0; font-size: 0.9rem; }
+
+.dealer-stats { display: flex; gap: 2rem; margin-bottom: 1.5rem; }
+.stat { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+.stat strong { font-size: 1.5rem; font-weight: 800; color: white; }
+.stat span { font-size: 0.8rem; color: #a0aec0; }
+
+.write-review-btn {
+  display: inline-block; padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white; text-decoration: none; border-radius: 10px;
+  font-weight: 600; transition: all 0.3s;
+}
+.write-review-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(102,126,234,0.4); }
+
+.reviews-section { padding: 3rem 2rem; }
+.reviews-container { max-width: 800px; margin: 0 auto; }
+.reviews-title { font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 2rem; }
+
+.no-reviews { text-align: center; padding: 3rem; color: #a0aec0; }
+.first-review-btn {
+  display: inline-block; margin-top: 1rem; padding: 0.65rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white; text-decoration: none; border-radius: 8px; font-weight: 600;
+}
+
+.reviews-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.review-card {
+  background: #1e2a3a; border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px; padding: 1.75rem; transition: all 0.3s;
+}
+.review-card:hover { border-color: rgba(102,126,234,0.3); transform: translateY(-2px); }
+
+.review-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+.reviewer-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; font-weight: 700; color: white; flex-shrink: 0;
+}
+.reviewer-info { flex: 1; }
+.reviewer-info h4 { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 0.25rem; }
+.verified-badge { font-size: 0.8rem; color: #68d391; }
+
+.sentiment-badge {
+  padding: 0.35rem 0.85rem; border-radius: 50px;
+  border: 1px solid; font-size: 0.8rem; font-weight: 600;
+  white-space: nowrap;
+}
+
+.review-body p { color: #cbd5e0; font-style: italic; line-height: 1.7; }
+
+.review-footer {
+  margin-top: 1rem; padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+.car-info, .review-date { color: #718096; font-size: 0.85rem; }
+
+.back-btn {
+  display: inline-block; margin-top: 1rem; padding: 0.6rem 1.25rem;
+  background: transparent; border: 1px solid rgba(255,255,255,0.15);
+  color: #a0aec0; text-decoration: none; border-radius: 8px; font-size: 0.9rem;
+}
