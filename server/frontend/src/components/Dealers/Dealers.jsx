@@ -103,31 +103,41 @@ function Dealers({ isLoggedIn, userName }) {
             <p>🔍 No dealerships found in {selectedState}.</p>
           </div>
         ) : (
-          <div className="dealers-grid">
-            {dealers.map(dealer => (
-              <div key={dealer.id} className="dealer-card">
-                <div className="dealer-card-header">
-                  <span className="dealer-icon">🏢</span>
-                  <div className="dealer-badge">{dealer.st}</div>
-                </div>
-                <div className="dealer-card-body">
-                  <h3>{dealer.full_name}</h3>
-                  <p className="dealer-city">📍 {dealer.city}, {dealer.state}</p>
-                  <p className="dealer-address">{dealer.address}</p>
-                </div>
-                <div className="dealer-card-footer">
-                  <Link to={`/dealer/${dealer.id}`} className="view-reviews-btn">
-                    View Reviews
-                  </Link>
-                  {isLoggedIn && (
-                    <Link to={`/dealer/${dealer.id}/review`} className="review-dealer-btn">
-                      ✍️ Review Dealer
+          <table className="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Dealer Name</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>ZIP</th>
+                <th>State</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {dealers.map(dealer => (
+                <tr key={dealer.id}>
+                  <td>{dealer.id}</td>
+                  <td>{dealer.full_name}</td>
+                  <td>{dealer.city}</td>
+                  <td>{dealer.address}</td>
+                  <td>{dealer.zip}</td>
+                  <td>{dealer.state}</td>
+                  <td>
+                    <Link to={`/dealer/${dealer.id}`} className="view-reviews-btn" style={{ marginRight: '10px' }}>
+                      View Reviews
                     </Link>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+                    {isLoggedIn && (
+                      <Link to={`/dealer/${dealer.id}/review`} className="review-dealer-btn">
+                        Review Dealer
+                      </Link>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         )}
       </div>
     </div>

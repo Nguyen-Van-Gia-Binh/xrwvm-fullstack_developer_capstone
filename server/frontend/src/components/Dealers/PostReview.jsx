@@ -139,18 +139,16 @@ function PostReview({ userName }) {
           </div>
 
           {/* Purchase Date */}
-          {formData.purchase && (
-            <div className="form-field">
-              <label htmlFor="purchase-date">Purchase Date</label>
-              <input
-                id="purchase-date"
-                type="date"
-                name="purchase_date"
-                value={formData.purchase_date}
-                onChange={handleChange}
-              />
-            </div>
-          )}
+          <div className="form-field">
+            <label htmlFor="purchase-date">Purchase Date</label>
+            <input
+              id="purchase-date"
+              type="date"
+              name="purchase_date"
+              value={formData.purchase_date}
+              onChange={handleChange}
+            />
+          </div>
 
           {/* Car Make */}
           <div className="form-field">
@@ -198,7 +196,7 @@ function PostReview({ userName }) {
             className="submit-review-btn"
             disabled={submitting}
           >
-            {submitting ? '⏳ Submitting...' : '🚀 Submit Review'}
+            {submitting ? '⏳ Posting...' : '🚀 Post Review'}
           </button>
         </form>
       </div>

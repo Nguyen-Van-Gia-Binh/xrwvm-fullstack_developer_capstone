@@ -1,4 +1,4 @@
-curl http://127.0.0.1:8000/djangoapp/get_dealers/Kansas
+curl -X GET http://127.0.0.1:8000/fetchDealers/Kansas
 
 Output:
 {

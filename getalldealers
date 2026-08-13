@@ -1,4 +1,4 @@
-curl http://127.0.0.1:8000/djangoapp/get_dealers
+curl -X GET http://127.0.0.1:8000/fetchDealers
 
 Output:
 {
@@ -23,6 +23,36 @@ Output:
     {"id": 17, "city": "Charlotte", "state": "North Carolina", "st": "NC", "address": "200 S Tryon St, Charlotte, NC 28202", "zip": "28202", "lat": "35.2271", "long": "-80.8431", "short_name": "xAuto Charlotte", "full_name": "xAutomotive Charlotte"},
     {"id": 18, "city": "Denver", "state": "Colorado", "st": "CO", "address": "1600 Glenarm Pl, Denver, CO 80202", "zip": "80202", "lat": "39.7392", "long": "-104.9903", "short_name": "xAuto Denver", "full_name": "xAutomotive Denver"},
     {"id": 19, "city": "Seattle", "state": "Washington", "st": "WA", "address": "600 Pine St, Seattle, WA 98101", "zip": "98101", "lat": "47.6062", "long": "-122.3321", "short_name": "xAuto Seattle", "full_name": "xAutomotive Seattle"},
-    {"id": 20, "city": "Nashville", "state": "Tennessee", "st": "TN", "address": "200 Broadway, Nashville, TN 37201", "zip": "37201", "lat": "36.1627", "long": "-86.7816", "short_name": "xAuto Nashville", "full_name": "xAutomotive Nashville"}
+    {"id": 20, "city": "Nashville", "state": "Tennessee", "st": "TN", "address": "200 Broadway, Nashville, TN 37201", "zip": "37201", "lat": "36.1627", "long": "-86.7816", "short_name": "xAuto Nashville", "full_name": "xAutomotive Nashville"},
+    {"id": 21, "city": "Detroit", "state": "Michigan", "st": "MI", "address": "100 Woodward Ave, Detroit, MI 48226", "zip": "48226", "lat": "42.3314", "long": "-83.0458", "short_name": "xAuto Detroit", "full_name": "xAutomotive Detroit"},
+    {"id": 22, "city": "El Paso", "state": "Texas", "st": "TX", "address": "200 Mesa St, El Paso, TX 79901", "zip": "79901", "lat": "31.7619", "long": "-106.4850", "short_name": "xAuto El Paso", "full_name": "xAutomotive El Paso"},
+    {"id": 23, "city": "Memphis", "state": "Tennessee", "st": "TN", "address": "300 Beale St, Memphis, TN 38103", "zip": "38103", "lat": "35.1495", "long": "-90.0490", "short_name": "xAuto Memphis", "full_name": "xAutomotive Memphis"},
+    {"id": 24, "city": "Baltimore", "state": "Maryland", "st": "MD", "address": "400 Pratt St, Baltimore, MD 21202", "zip": "21202", "lat": "39.2904", "long": "-76.6122", "short_name": "xAuto Baltimore", "full_name": "xAutomotive Baltimore"},
+    {"id": 25, "city": "Boston", "state": "Massachusetts", "st": "MA", "address": "500 Boylston St, Boston, MA 02116", "zip": "02116", "lat": "42.3601", "long": "-71.0589", "short_name": "xAuto Boston", "full_name": "xAutomotive Boston"},
+    {"id": 26, "city": "Milwaukee", "state": "Wisconsin", "st": "WI", "address": "600 Water St, Milwaukee, WI 53202", "zip": "53202", "lat": "43.0389", "long": "-87.9065", "short_name": "xAuto Milwaukee", "full_name": "xAutomotive Milwaukee"},
+    {"id": 27, "city": "Albuquerque", "state": "New Mexico", "st": "NM", "address": "700 Central Ave, Albuquerque, NM 87102", "zip": "87102", "lat": "35.0844", "long": "-106.6504", "short_name": "xAuto Albuquerque", "full_name": "xAutomotive Albuquerque"},
+    {"id": 28, "city": "Tucson", "state": "Arizona", "st": "AZ", "address": "800 Congress St, Tucson, AZ 85701", "zip": "85701", "lat": "32.2226", "long": "-110.9747", "short_name": "xAuto Tucson", "full_name": "xAutomotive Tucson"},
+    {"id": 29, "city": "Fresno", "state": "California", "st": "CA", "address": "900 Fulton St, Fresno, CA 93721", "zip": "93721", "lat": "36.7378", "long": "-119.7871", "short_name": "xAuto Fresno", "full_name": "xAutomotive Fresno"},
+    {"id": 30, "city": "Sacramento", "state": "California", "st": "CA", "address": "1000 K St, Sacramento, CA 95814", "zip": "95814", "lat": "38.5816", "long": "-121.4944", "short_name": "xAuto Sacramento", "full_name": "xAutomotive Sacramento"},
+    {"id": 31, "city": "Kansas City", "state": "Missouri", "st": "MO", "address": "1100 Main St, Kansas City, MO 64105", "zip": "64105", "lat": "39.0997", "long": "-94.5786", "short_name": "xAuto KC MO", "full_name": "xAutomotive Kansas City MO"},
+    {"id": 32, "city": "Mesa", "state": "Arizona", "st": "AZ", "address": "1200 Main St, Mesa, AZ 85201", "zip": "85201", "lat": "33.4152", "long": "-111.8315", "short_name": "xAuto Mesa", "full_name": "xAutomotive Mesa"},
+    {"id": 33, "city": "Atlanta", "state": "Georgia", "st": "GA", "address": "1300 Peachtree St, Atlanta, GA 30309", "zip": "30309", "lat": "33.7490", "long": "-84.3880", "short_name": "xAuto Atlanta", "full_name": "xAutomotive Atlanta"},
+    {"id": 34, "city": "Omaha", "state": "Nebraska", "st": "NE", "address": "1400 Farnam St, Omaha, NE 68102", "zip": "68102", "lat": "41.2565", "long": "-95.9345", "short_name": "xAuto Omaha", "full_name": "xAutomotive Omaha"},
+    {"id": 35, "city": "Colorado Springs", "state": "Colorado", "st": "CO", "address": "1500 Tejon St, Colorado Springs, CO 80903", "zip": "80903", "lat": "38.8339", "long": "-104.8214", "short_name": "xAuto CO Springs", "full_name": "xAutomotive Colorado Springs"},
+    {"id": 36, "city": "Raleigh", "state": "North Carolina", "st": "NC", "address": "1600 Fayetteville St, Raleigh, NC 27601", "zip": "27601", "lat": "35.7796", "long": "-78.6382", "short_name": "xAuto Raleigh", "full_name": "xAutomotive Raleigh"},
+    {"id": 37, "city": "Miami", "state": "Florida", "st": "FL", "address": "1700 Biscayne Blvd, Miami, FL 33132", "zip": "33132", "lat": "25.7617", "long": "-80.1918", "short_name": "xAuto Miami", "full_name": "xAutomotive Miami"},
+    {"id": 38, "city": "Virginia Beach", "state": "Virginia", "st": "VA", "address": "1800 Pacific Ave, Virginia Beach, VA 23451", "zip": "23451", "lat": "36.8529", "long": "-75.9780", "short_name": "xAuto VA Beach", "full_name": "xAutomotive Virginia Beach"},
+    {"id": 39, "city": "Oakland", "state": "California", "st": "CA", "address": "1900 Broadway, Oakland, CA 94612", "zip": "94612", "lat": "37.8044", "long": "-122.2712", "short_name": "xAuto Oakland", "full_name": "xAutomotive Oakland"},
+    {"id": 40, "city": "Minneapolis", "state": "Minnesota", "st": "MN", "address": "2000 Nicollet Mall, Minneapolis, MN 55403", "zip": "55403", "lat": "44.9778", "long": "-93.2650", "short_name": "xAuto Minneapolis", "full_name": "xAutomotive Minneapolis"},
+    {"id": 41, "city": "Tulsa", "state": "Oklahoma", "st": "OK", "address": "2100 Boston Ave, Tulsa, OK 74119", "zip": "74119", "lat": "36.1540", "long": "-95.9928", "short_name": "xAuto Tulsa", "full_name": "xAutomotive Tulsa"},
+    {"id": 42, "city": "Arlington", "state": "Texas", "st": "TX", "address": "2200 Center St, Arlington, TX 76010", "zip": "76010", "lat": "32.7357", "long": "-97.1081", "short_name": "xAuto Arlington", "full_name": "xAutomotive Arlington"},
+    {"id": 43, "city": "New Orleans", "state": "Louisiana", "st": "LA", "address": "2300 Canal St, New Orleans, LA 70112", "zip": "70112", "lat": "29.9511", "long": "-90.0715", "short_name": "xAuto NOLA", "full_name": "xAutomotive New Orleans"},
+    {"id": 44, "city": "Wichita", "state": "Kansas", "st": "KS", "address": "2400 Douglas Ave, Wichita, KS 67214", "zip": "67214", "lat": "37.6872", "long": "-97.3301", "short_name": "xAuto Wichita 2", "full_name": "xAutomotive Wichita 2"},
+    {"id": 45, "city": "Cleveland", "state": "Ohio", "st": "OH", "address": "2500 Euclid Ave, Cleveland, OH 44115", "zip": "44115", "lat": "41.4993", "long": "-81.6944", "short_name": "xAuto Cleveland", "full_name": "xAutomotive Cleveland"},
+    {"id": 46, "city": "Tampa", "state": "Florida", "st": "FL", "address": "2600 Kennedy Blvd, Tampa, FL 33609", "zip": "33609", "lat": "27.9506", "long": "-82.4572", "short_name": "xAuto Tampa", "full_name": "xAutomotive Tampa"},
+    {"id": 47, "city": "Bakersfield", "state": "California", "st": "CA", "address": "2700 Truxtun Ave, Bakersfield, CA 93301", "zip": "93301", "lat": "35.3733", "long": "-119.0187", "short_name": "xAuto Bakersfield", "full_name": "xAutomotive Bakersfield"},
+    {"id": 48, "city": "Aurora", "state": "Colorado", "st": "CO", "address": "2800 Colfax Ave, Aurora, CO 80011", "zip": "80011", "lat": "39.7294", "long": "-104.8319", "short_name": "xAuto Aurora", "full_name": "xAutomotive Aurora"},
+    {"id": 49, "city": "Honolulu", "state": "Hawaii", "st": "HI", "address": "2900 Kalakaua Ave, Honolulu, HI 96815", "zip": "96815", "lat": "21.3069", "long": "-157.8583", "short_name": "xAuto Honolulu", "full_name": "xAutomotive Honolulu"},
+    {"id": 50, "city": "Anaheim", "state": "California", "st": "CA", "address": "3000 Katella Ave, Anaheim, CA 92802", "zip": "92802", "lat": "33.8366", "long": "-117.9143", "short_name": "xAuto Anaheim", "full_name": "xAutomotive Anaheim"}
   ]
 }
